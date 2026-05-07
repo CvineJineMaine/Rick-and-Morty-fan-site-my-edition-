@@ -2,7 +2,7 @@
 Uses the RaM API
 
 # Rick and Morty Fan Site
-
+![Project Preview](./preview.png)
 A fan-made web application dedicated to the universe of "Rick and Morty". This project serves as a database for characters, locations, and episodes from the show.
 
 ## Features
