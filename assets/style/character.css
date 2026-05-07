@@ -1,0 +1,159 @@
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_characters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.pagination-nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+img.card-img-top{
+    border-radius: 15px;
+}
+
+img{
+    border-radius: 15px;
+}
+
+.modal-content-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.modal-info-text h1 {
+  margin-top: 0;
+}
+
+.pagination {
+    margin-top: 30px;
+    gap: 5px;
+}
+
+.page-link {
+    background-color: #1e1e1e; /* Dark background */
+    color: #97ce4c;           /* Neon Green text */
+    border: 1px solid #97ce4c;
+    border-radius: 8px !important; /* Rounded corners */
+    padding: 10px 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px rgba(151, 206, 76, 0.2);
+}
+
+.page-link:hover {
+    background-color: #97ce4c;
+    color: #000;              /* Black text on hover */
+    box-shadow: 0 0 15px rgba(151, 206, 76, 0.6);
+    border-color: #97ce4c;
+}
+
+
+.page-item.active .page-link {
+    background-color: #00b0c8; /* Portal Blue for active page */
+    border-color: #00b0c8;
+    color: white;
+    box-shadow: 0 0 15px rgba(0, 176, 200, 0.5);
+}
+
+
+.page-item.disabled .page-link {
+    background-color: #121212;
+    border-color: #333;
+    color: #555;
+    pointer-events: none;
+}
+
+
+.pagination-nav {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+
+.pagination {
+    gap: 8px; 
+    border: none;
+}
+
+
+.page-link {
+    border: none !important;
+    border-radius: 12px !important; /* Rounded appearance */
+    background-color: #27272a; /* HeroUI Dark Gray */
+    color: #ffffff;
+    padding: 10px 16px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.page-link:hover {
+    background-color: #3f3f46;
+    color: #ffffff;
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+
+.page-item.active .page-link {
+    background-color: #00b0c8 !important; /* Portal Blue */
+    color: white !important;
+    box-shadow: 0 0 15px rgba(0, 176, 200, 0.4); /* Glow effect */
+}
+
+
+.page-item.disabled .page-link {
+    background-color: #18181b;
+    color: #71717a;
+    opacity: 0.5;
+}
+
+/* HeroUI Style for Rick & Morty */
+.pagination {
+    display: flex;
+    gap: 10px; /* Space between "islands" */
+    justify-content: center;
+    border: none;
+}
+
+.page-link {
+    background-color: #27272a !important; /* Dark Gray */
+    color: #97ce4c !important; /* Portal Green */
+    border: none !important;
+    border-radius: 12px !important; /* Super rounded */
+    padding: 10px 18px;
+    transition: 0.3s;
+}
+
+.page-item.active .page-link {
+    background-color: #97ce4c !important; /* Neon Green background when active */
+    color: #000 !important; /* Black text */
+    box-shadow: 0 0 15px rgba(151, 206, 76, 0.5);
+}
+
+.page-link:hover {
+    transform: translateY(-3px);
+    background-color: #3f3f46 !important;
+}
+
+.btn-primary {
+    background-color: #97ce4c;
+    border-color: #97ce4c;
+    font-weight: 600;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}

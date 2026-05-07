@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Characters - Rick and Morty</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Space+Mono&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="../assets/style/style.css">
+  <link rel="stylesheet" href="../assets/style/character.css">
+  <link rel="stylesheet" href="../assets/style/styleshit.css">
+</head>
+
+<body>
+
+
+  <header>
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Rick and Morty</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="./characters.html">Characters</a>
+          <a class="nav-link" href="./episodes.html">Episodes</a>
+          <a class="nav-link" href="./locations.html">Locations</a>
+          <a class="nav-link" href="./watchlist.html">Watch list</a>
+          <div class="navbar-nav ms-auto align-items-center">
+           <div class="form-check form-switch ms-3">
+               <input class="form-check-input" type="checkbox" id="themeToggle">
+               <label class="form-check-label" for="themeToggle" id="themeLabel">🌙</label>
+           </div>
+       </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+        </header>
+
+ <main class="main">
+  <div class="container-fluid">
+  <div class="container">
+    <h1 class="text-center mt-4">Characters</h1>
+        <div class="d-flex flex-row mt-4 filter_box">
+            <h3 class="fileter_header me-4">Filter:</h3>
+            <div class="input-group mb-3">
+               <span class="input-group-text" id="addon-wrapping">Name</span>
+               <input type="text" class="form-control" id="filter_name" placeholder="Name of charapter" aria-label="Username" aria-describedby="addon-wrapping">
+               <label class="input-group-text" for="filter_status">Status:</label>
+               <select class="form-select" id="filter_status">
+                  <option value="">Choose status of charapter...</option>
+                  <option value="alive">alive</option>
+                  <option value="dead">dead</option>
+                  <option value="unknown">unknown</option>
+               </select>
+               <label class="input-group-text" for="filter_gender">Gender:</label>
+               <select class="form-select" id="filter_gender">
+                  <option value="">Choose gender of charapter...</option>
+                  <option value="female">female</option>
+                  <option value="male">male</option>
+                  <option value="genderless">genderless</option>
+                  <option value="unknown">unknown</option>
+               </select>
+               <button class="btn btn-success" type="button" id="btn_filter">Enter</button>
+            </div>
+
+         </div>
+
+</div>
+</div>
+          </select>
+
+        <div class="container_characters">
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+
+        <br>
+
+        
+
+          <nav class="pagination-nav">
+          <ul class="pagination"></ul> </nav>
+            
+
+
+          </ul>
+        </nav>
+
+    </main>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Information Character</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="py-4 mt-5 bg-body-tertiary border-top">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center text-md-start">
+                <a class="navbar-brand fw-bold fs-4 text-decoration-none" href="../index.html">Rick & Morty DB</a>
+                <p class="text-muted small mb-0">Science is wise, follow its advice.</p>
+            </div>
+            <div class="col-md-4 text-center my-3 my-md-0">
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><a href="./characters.html" class="text-muted text-decoration-none">Characters</a></li>
+                    <li class="list-inline-item mx-2">·</li>
+                    <li class="list-inline-item"><a href="./locations.html" class="text-muted text-decoration-none">Locations</a></li>
+                    <li class="list-inline-item mx-2">·</li>
+                    <li class="list-inline-item"><a href="./watchlist.html" class="text-muted text-decoration-none">Watch List</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 text-center text-md-end">
+                <p class="mb-0 text-muted">&copy; 2026 C-137. All dimensions reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <script src="../assets/script/character.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+    <script src="../assets/script/theme.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,8 @@
+ body, html{
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.567);
+    background: url(../images/Untitled97.jpg) no-repeat center center fixed;
+} 

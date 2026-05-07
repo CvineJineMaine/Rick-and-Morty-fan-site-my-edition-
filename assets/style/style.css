@@ -1,0 +1,73 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.container_episodes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Smoothly transition background and text colors */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Adjust the toggle switch appearance */
+.form-check-input:checked {
+    background-color: #97ce4c; /* Rick's Portal Green */
+    border-color: #97ce4c;
+}
+
+#themeLabel {
+    cursor: pointer;
+    font-size: 1.2rem;
+    user-select: none;
+}
+
+footer {
+    border-top: 2px solid #b7e4f9 !important; /* Subtle blue */
+    box-shadow: 0px -5px 15px rgba(151, 206, 76, 0.1); /* Subtle portal green glow */
+}
+
+footer a:hover {
+    color: #97ce4c !important; /* Rick's portal green on hover */
+    transition: 0.3s;
+}
+
+/* Light Theme Background */
+[data-bs-theme="light"] body {
+    background-image: url('../images/Untitled98.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.5s ease-in-out; /* Smooth transition */
+}
+
+/* Dark Theme Background */
+[data-bs-theme="dark"] body {
+    background-image: url('../images/Untitled971.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.5s ease-in-out;
+}
+
+h1, h2, h3, .navbar-brand {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body, .table {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.9rem;
+}
